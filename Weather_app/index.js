@@ -95,10 +95,10 @@ function renderWeatherInfo(data){
     CountryIcon.src = `https://flagcdn.com/144x108/${data?.sys?.country.toLowerCase()}.png`;
     desc.innerText = data?.weather[0]?.description;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data?.weather[0]?.icon}.png`;
-    temp.innerText = data?.main?.temp;
-    windSpeed.innerText = data?.wind?.speed;
-    humidity.innerText = data?.main?.humidity;
-    cloudiness.innerText = data?.clouds?.all;
+    temp.innerText = `${data?.main?.temp} °C`;
+    windSpeed.innerText = `${data?.wind?.speed} m/s`;
+    humidity.innerText = `${data?.main?.humidity} %`;
+    cloudiness.innerText = `${data?.clouds?.all} %`;
 }
 
 function getLoaction(){

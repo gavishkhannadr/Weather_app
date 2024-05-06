@@ -16,7 +16,7 @@
         <div class="weather-container">
 
             <!-----grant-location-container---->
-            <div class="grant-location-container">
+            <div class="sub-container grant-location-container">
                 <img src="./assets/location-icon.png"  width="80" height="80" alt="location-icon" loading="lazy">
                 <p>Grant Location Access</p>
                 <p>Allow Access to  get weather Information</p>
@@ -32,16 +32,16 @@
             </form>
 
             <!-----Loading Screen---->
-            <div class="loading-container">
-                <img src="./assets/loading.gif" alt="" width="150" height="150">
-                <p>Loading </p>
+            <div class="sub-container loading-container">
+                <img src="./assets/loading.gif" alt="" width="400" height="250">
+                <p>Loading.... </p>
             </div>
 
             <!--- Show Weather Info-->
-            <div class="user-info-container">
+            <div class="sub-container user-info-container">
                 <!-- #region-->
                 <div class="name">
-                    <p data-cityName> hi</p>
+                    <p data-cityName></p>
                     <img src="" data-countryIcon alt="">
                 </div>
                 <!--Weather Description-->
@@ -58,20 +58,23 @@
                     <!--card 1 -->
                     <div class="parameter">
                         <img src="./assets/wind.png" alt="wind">
-                        <p>Windspeed</p>
+                        
                         <p data-windSpeed></p>
+                        <p>Windspeed</p>
                     </div>
 
                     <!--card 2 -->
                     <div class="parameter">
                         <img src="./assets/humidity.png" alt="humidity">
                         <p data-humidity></p>
+                        <p>Humidity</p>
                     </div>
 
                     <!--card 3-->
                     <div class="parameter">
                         <img src="./assets/partly-cloudy.png" alt="cloud">
                         <p data-cloudiness></p>
+                        <p>clouds</p>
                     </div>
 
                 </div>
